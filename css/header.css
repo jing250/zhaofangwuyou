@@ -7,6 +7,7 @@ a {
 }
 header {
   width: 100%;
+  height: 4.2rem;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
   background-color: #ff8a00;
@@ -16,7 +17,14 @@ header {
 header .log {
   flex: 4;
 }
+header .log img {
+  width: 9rem;
+}
 header .my,
 header .app {
   flex: 1;
+}
+header .my img,
+header .app img {
+  width: 2rem;
 }

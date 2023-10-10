@@ -11,17 +11,17 @@ ul {
 }
 footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: #2f3130;
   color: #939494;
-  padding: 0 1rem 0.8rem;
+  padding: 0.8rem 1rem;
   box-sizing: border-box;
 }
 footer .top {
   font-size: 0.8rem;
   font-weight: 700;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   box-sizing: border-box;
   border-bottom: 1px solid #6d6d6d;
 }
