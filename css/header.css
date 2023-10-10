@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  background-color: #ff8a00;
+  display: flex;
+  align-items: center;
+}
+header .log {
+  flex: 4;
+}
+header .my,
+header .app {
+  flex: 1;
+}
