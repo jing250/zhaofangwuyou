@@ -3,21 +3,35 @@
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 input {
     outline: none;
 }
 
+html,
+body {
+    background-color: #f5f5f5;
+    min-width: 375px;
+}
+
+/* 大图 */
 .banner {
     width: 100%;
-    height: 20rem;
+    height: 16rem;
     background: url(../image/index/banner.png)no-repeat 0 0;
     background-size: cover;
     position: relative;
 
     form {
+        width: 100%;
         position: absolute;
-        bottom: 1rem;
+        bottom: .4rem;
         left: 1.5rem;
+        // display: flex;
+        // justify-content: center;
 
         span {
             position: absolute;
@@ -36,6 +50,244 @@ input {
             border-radius: 6px;
             box-shadow: inset 3px 3px rgba(204, 204, 204, 0.39), 3px 3px rgba(204, 204, 204, 0.39);
             padding-left: 3.3rem;
+
+        }
+    }
+}
+
+/* 导航 */
+.navList {
+    nav {
+        ul {
+            background: #ff8a00;
+            font-size: 0.12rem;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0;
+            box-sizing: border-box;
+
+            li {
+                a {
+                    width: 4rem;
+                    color: #fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        margin-top: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 大图2 */
+.banner2 {
+    padding: 1rem 0;
+    background-color: #f5f5f5;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* 热门房源 */
+.hotHouse {
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+
+    h2 {
+        background-color: #ff8a00;
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+
+        span {
+            font-size: 0.9rem;
+        }
+    }
+
+    ul {
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+
+        li {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1.7rem 0;
+            border-bottom: 1px solid red;
+
+            img {
+                width: 6rem;
+                height: 6rem;
+                margin-right: .8rem;
+            }
+
+            .text {
+                h3 {
+                    font-size: 1.3rem;
+                    width: 13.5rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                p {
+                    // font-size: 0.12rem;
+                    padding: 0.35rem 0;
+                    box-sizing: border-box;
+                    color: #000;
+                    overflow: hidden;
+
+                    strong {
+                        color: #ff8a00;
+                        float: right;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: #8b8b8b;
+
+                        span {
+                            color: #999999;
+                            float: right;
+                        }
+                    }
+
+                    a {
+                        color: #849aae;
+                        background: #f4f7f9;
+                        padding: 0.02rem 0.04rem;
+                    }
+                }
+            }
+        }
+
+        li:last-of-type {
+            border-bottom: none;
+        }
+
+    }
+}
+
+/* 热门关注、友情链接 */
+.hotAttention {
+    background: #ffffff;
+    border-top: 1px solid #e5e5e5;
+
+    .title {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ff8a00;
+        display: flex;
+        line-height: 0.54rem;
+
+        li {
+            flex: 1;
+            text-align: center;
+            padding: 1.72rem 0;
+            box-sizing: border-box;
+
+            a {
+                color: #666666;
+            }
+
+            &:first-child {
+
+                border-bottom: 1px solid #ff8a00;
+
+                a {
+                    color: #ff8a00;
+                }
+            }
+        }
+    }
+
+    .content {
+        padding: 1rem 1.72rem;
+        box-sizing: border-box;
+        font-size: 1rem;
+        display: flex;
+
+        ul {
+            flex: 1;
+            text-align: left;
+            margin: 0.12rem 0 0.12rem 0.2rem;
+
+            li {
+                line-height: 2rem;
+
+                a {
+                    color: #666666;
+                }
+            }
+        }
+    }
+}
+
+/* 下载透明层 */
+.download {
+    width: 100%;
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    padding-left: 1.2rem;
+
+    .close {
+        width: 1.4rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .downLft {
+        display: flex;
+        justify-content: space-around;
+        flex: 6;
+        font-size: 0.12rem;
+        color: #fff;
+
+        img {
+            width: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .text {
+            padding: 1rem 0;
+            box-sizing: border-box;
+
+            p {
+                height: 1.4rem;
+                font-size: 1.1rem;
+
+                &:last-child {
+                    font-size: .85rem;
+                }
+            }
+        }
+
+    }
+
+    .downRight {
+        background-color: #ff8a00;
+        flex: 4;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 4rem;
+
+        a {
+            color: #fff;
         }
     }
 }
