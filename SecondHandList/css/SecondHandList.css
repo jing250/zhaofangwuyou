@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.box {
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+.Searching {
+  width: 90%;
+  height: 3rem;
+  margin: 0.5rem auto;
+  margin-bottom: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d3d1d1;
+}
+.Searching input {
+  width: 16rem;
+  height: 1.2rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+}
+.Searching .search {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.6rem;
+  background: url(../../image/SecondHandList/search_03.png) no-repeat center;
+  background-size: 75%;
+}
+.Topic {
+  width: 100%;
+}
+.Topic .nav {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  background-color: #FFFFFF;
+}
+.Topic .nav div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #747774;
+  border-top: 1px solid #bdbaba;
+  border-bottom: 1px solid #bfbcbc;
+  background: url(../../image/SecondHandList/jian.png) no-repeat 62px 7px;
+}
+/* 热门房源 */
+.hotHouse {
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotHouse ul {
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.hotHouse ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid red;
+}
+.hotHouse ul li a img {
+  width: 6rem;
+  height: 6rem;
+}
+.hotHouse ul li a .text h3 {
+  font-size: 1rem;
+  width: 13.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000000;
+}
+.hotHouse ul li a .text p {
+  font-size: 0.8rem;
+  padding: 0.35rem 0;
+  box-sizing: border-box;
+  color: #000;
+  overflow: hidden;
+}
+.hotHouse ul li a .text span {
+  display: block;
+  font-size: 0.8rem;
+  color: #969390;
+}
+.hotHouse ul li a .text span strong {
+  color: #ff8a00;
+}
+.hotHouse ul li:last-of-type {
+  border-bottom: none;
+}
