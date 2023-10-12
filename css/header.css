@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  padding: 0.3rem 1rem;
+  box-sizing: border-box;
+  background-color: #ff8a00;
+  display: flex;
+  align-items: center;
+}
+header .log {
+  flex: 4;
+}
+header .log img {
+  width: 8rem;
+}
+header .my,
+header .app {
+  flex: 1;
+}
+header .my img,
+header .app img {
+  width: 2rem;
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    min-width: 375px;
+    background-color: #F5F5F5;
+
+}
+
+.top {
+    width: 100%;
+    background: url(../../image/my/bg1.png)no-repeat;
+    background-size: 100% 100%;
+    padding: .5rem 0;
+    box-sizing: border-box;
+
+    /* 导航栏 */
+    nav {
+        padding: .5rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: right;
+
+        a {
+            width: 3rem;
+            color: #fff;
+            text-align: center;
+
+            img {
+                width: 1rem;
+            }
+        }
+    }
+
+    /* 登录 */
+    .logIn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 4rem;
+        }
+
+        a:nth-child(2) {
+            color: #fff;
+            margin: 1rem 0 1.5rem 0;
+            box-sizing: border-box;
+            padding: .3rem 1.3rem;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+        }
+    }
+
+}
+
+
+.userList {
+    margin-top: .8rem;
+    background-color: #ffffff;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+
+    a {
+        color: #666666;
+        display: inline-block;
+        width: 100%;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        border-bottom: 1px solid #dcdcdc;
+        background: url(../../image/my/right.png)no-repeat right center;
+        background-size: .5rem 1rem;
+
+        img {
+            width: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+html,
+body {
+  min-width: 375px;
+  background-color: #F5F5F5;
+}
+.top {
+  width: 100%;
+  background: url(../../image/my/bg1.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  /* 导航栏 */
+  /* 登录 */
+}
+.top nav {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+}
+.top nav a {
+  width: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.top nav a img {
+  width: 1rem;
+}
+.top .logIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top .logIn img {
+  width: 4rem;
+}
+.top .logIn a:nth-child(2) {
+  color: #fff;
+  margin: 1rem 0 1.5rem 0;
+  padding: 0.3rem 1.3rem;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+.userList {
+  margin-top: 0.8rem;
+  background-color: #ffffff;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.userList a {
+  color: #666666;
+  display: inline-block;
+  width: 100%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #dcdcdc;
+  background: url(../../image/my/right.png) no-repeat right center;
+  background-size: 0.5rem 1rem;
+}
+.userList a img {
+  width: 1.2rem;
+}

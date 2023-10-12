@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+html,
+body {
+  min-width: 375px;
+  background-color: #F5F5F5;
+}
+/* 首页我的 */
+.rentalAddr {
+  height: 3rem;
+  line-height: 3em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #c5c5c5;
+  padding-left: 1.5rem;
+}
+.rentalAddr a {
+  color: #232222;
+}
+/* 房屋详细信息 */
+ul {
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+ul li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ff8a00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li .left img {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 0.8rem;
+}
+ul li .right {
+  width: 18.7rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+ul li .right h2 {
+  font-size: 1rem;
+}
+ul li .right p {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+ul li .right p strong {
+  color: #ff8a00;
+  margin-left: 1rem;
+}
+ul li:last-of-type {
+  border-bottom: none;
+}

@@ -6,12 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>普通登录</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <link rel="stylesheet" href="./css/Normal.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 
 <body>
+    <!-- 头部导航栏 -->
+    <header>
+        <a href="../index.html" class="log">
+            <img src="../image/index/logo.jpg" alt="">
+        </a>
+        <a href="./index.html" class="my">
+            <img src="../image/index/my.jpg" alt="">
+        </a>
+        <a href="javascript:;" class="app">
+            <img src="../image/index/xiazai.jpg" alt="">
+        </a>
+    </header>
 
+    <!-- 首页我的 -->
+    <section class="rentalAddr">
+        <a href="../index.html"><strong>首页</strong></a> >
+        <a href="./index.html">我的</a> >
+        <a href="javascript:;">登录</a>
+    </section>
+
+    <!-- tab切换 登录 -->
+    <section class="registerForm login">
+        <ul class="title">
+            <li class="as active">普通登录</li>
+            <li class="as">验证码快捷登录</li>
+        </ul>
+        <div class="customLogin active">
+            <form action="./index1.html" onsubmit="return form()">
+                <ul>
+                    <li>
+                        <input id="number" id="number" type="text" placeholder="请输入手机号码">
+                    </li>
+                    <li><input type="password" id="password" placeholder="请输入密码"></li>
+                </ul>
+                <input class="registerBtn" type="submit" value="立即登录">
+                <div class="tiShi">
+                    <a href="./Immediately.html">立即注册</a>
+                    <a href="./Forget.html">忘记密码</a>
+                </div>
+        </div>
+        </form>
+        <div class="customLogin">
+            <form action="./index1.html" onsubmit="return form1()">
+                <ul>
+                    <li class="mima">
+                        <input type="text" id="numbera" placeholder="请输入手机号码">
+                        <a id="code" href="javascript:;">发送验证码</a>
+                    </li>
+                    <li><input type="text" id="numCode" placeholder="请输入短信中的验证码"></li>
+                </ul>
+                <input class="registerBtn" type="submit" value="验证并登录">
+                <div class="tiShi">
+                    <a href="./Immediately.html">立即注册</a>
+                    <a href="./Forget.html">忘记密码</a>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
+
+<script src="../js/rem.js"></script>
+<script src="./js/Normal.js"></script>
