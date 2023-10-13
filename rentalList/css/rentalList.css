@@ -14,24 +14,35 @@ a {
 .box {
   background-color: #F5F5F5;
   overflow: hidden;
-  font-size: 1.2ren;
+}
+/* 首页 北京租房 */
+.rentalAddr {
+  height: 3rem;
+  line-height: 3em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #c5c5c5;
+  padding-left: 1.5rem;
+  display: flex;
+}
+.rentalAddr a {
+  color: #232222;
 }
 .Searching {
   width: 90%;
-  height: 3.5rem;
+  height: 3rem;
   margin: 1rem auto;
   margin-bottom: 1rem;
   background-color: #FFFFFF;
   border-radius: 0.2rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid #d3d1d1;
 }
 .Searching input {
-  width: 22rem;
-  height: 1.4rem;
+  width: 16rem;
+  height: 1.2rem;
   margin-left: 1rem;
-  font-size: 1.4rem;
   border: none;
   outline: none;
 }
@@ -39,8 +50,7 @@ a {
   width: 2rem;
   height: 2rem;
   margin-left: 0.6rem;
-  float: right;
-  background: url(../../image/SecondHandList/search_03.png) no-repeat right center;
+  background: url(../../image/SecondHandList/search_03.png) no-repeat center;
   background-size: 75%;
 }
 .Topic {
@@ -92,12 +102,12 @@ a {
 .Topic .someList {
   position: relative;
   display: none;
-  transform: translateY(-13.5rem);
+  transform: translateY(-16rem);
   z-index: 999;
 }
 .Topic .someList .navto {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   display: flex;
   background-color: #FFFFFF;
 }
@@ -301,8 +311,8 @@ a {
   margin-left: 1rem;
 }
 .hotHouse ul li a .text h3 {
-  overflow: hidden;
   font-size: 1.4rem;
+  overflow: hidden;
   color: #000000;
   margin-bottom: 1rem;
 }
@@ -313,15 +323,25 @@ a {
   color: #000;
   overflow: hidden;
 }
-.hotHouse ul li a .text span {
-  display: block;
-  font-size: 1.2rem;
-  color: #969390;
-  margin: 0.4rem 0;
-}
-.hotHouse ul li a .text span strong {
+.hotHouse ul li a .text p strong {
   color: #ff8a00;
+  float: right;
 }
-.hotHouse ul li:last-of-type a {
+.hotHouse ul li a .text p:nth-of-type(2) {
+  color: #8b8b8b;
+}
+.hotHouse ul li a .text p:nth-of-type(2) span {
+  color: #999999;
+  float: right;
+}
+.hotHouse ul li a .text p i {
+  font-style: normal;
+  float: left;
+  color: #6DA719;
+  background: #f4f7f9;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #6DA719;
+}
+.hotHouse ul li:last-of-type {
   border-bottom: none;
 }
