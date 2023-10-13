@@ -168,6 +168,9 @@
                                 <li>高楼层</li>
                             </ul>
                         </li>
+                        <li class="clear"><a href="#">清空条件</a></li>
+                        <li class="btnOK"><a href="#">确定</a></li>
+
                     </ul>
                 </li>
             </ul>
@@ -255,7 +258,7 @@
             // 定义当前元素的下标
             var index = this.getAttribute('index');
             for (var k in someList) {
-
+                someList[k].style.display = 'none';
                 if (index == 0) {
                     someList[index].style.display = 'flex';
 

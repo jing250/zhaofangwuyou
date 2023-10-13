@@ -22,10 +22,9 @@ body {
   position: relative;
 }
 .banner form {
-  width: 100%;
   position: absolute;
   bottom: 0.4rem;
-  left: 1.5rem;
+  left: 2.25rem;
 }
 .banner form span {
   position: absolute;

@@ -38,9 +38,6 @@ li input {
   padding-left: 1rem;
   box-sizing: border-box;
 }
-.customLogin:nth-child(3) {
-  display: none;
-}
 .mima {
   position: relative;
 }
