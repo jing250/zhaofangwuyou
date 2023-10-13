@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>忘记密码</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="./css/Forget.css">
     <script src=""></script>
 </head>
 
 <body>
+    <!-- 头部导航栏 -->
+    <header>
+        <a href="../index.html" class="log">
+            <img src="../image/index/logo.jpg" alt="">
+        </a>
+        <a href="./index.html" class="my">
+            <img src="../image/index/my.jpg" alt="">
+        </a>
+        <a href="javascript:;" class="app">
+            <img src="../image/index/xiazai.jpg" alt="">
+        </a>
+    </header>
 
+    <!-- 首页我的 -->
+    <section class="rentalAddr">
+        <a href="../index.html"><strong>首页</strong></a> >
+        <a href="javascript:;">找回密码</a>
+    </section>
+
+    <!-- 注册 -->
+    <div class="customLogin fastLogin">
+        <form action="./Normal.html" onsubmit="return form()">
+            <ul>
+                <li class="mima">
+                    <input type="text" id="number" placeholder="请输入手机号码">
+                    <a id="code" href="#">发送验证码</a>
+                </li>
+                <li><input type="text" id="numCode" placeholder="请输入短信中的验证码"></li>
+                <li><input type="password" id="password" placeholder="请输入新密码"></li>
+                <li><input type="password" id="repassword" placeholder="请输入确认密码"></li>
+            </ul>
+            <input class="registerBtn" type="submit" value="提交">
+        </form>
+    </div>
 </body>
 
 </html>
+
+<script src="../js/rem.js"></script>
+<script src="./js/Forget.js"></script>

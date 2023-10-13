@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #747774;
+  display: block;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.box {
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+/* 首页 北京租房 */
+.rentalAddr {
+  height: 3rem;
+  line-height: 3em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #c5c5c5;
+  padding-left: 1.5rem;
+  display: flex;
+}
+.rentalAddr a {
+  color: #232222;
+}
+.Searching {
+  width: 90%;
+  height: 3rem;
+  margin: 1rem auto;
+  margin-bottom: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d3d1d1;
+}
+.Searching input {
+  width: 16rem;
+  height: 1.2rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+}
+.Searching .search {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.6rem;
+  background: url(../../image/SecondHandList/search_03.png) no-repeat center;
+  background-size: 75%;
+}
+.Topic {
+  width: 100%;
+  /*遮罩层*/
+}
+.Topic .hide {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  /*接口*/
+}
+.Topic .nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  z-index: 8;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+}
+.Topic .nav div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #747774;
+  font-size: 1.6rem;
+  border-top: 1px solid #bdbaba;
+  border-bottom: 1px solid #bfbcbc;
+  position: relative;
+}
+.Topic .nav div span {
+  display: block;
+  border-top: 5px solid #ccc;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.Topic .someList {
+  position: relative;
+  display: none;
+  transform: translateY(-16rem);
+  z-index: 999;
+}
+.Topic .someList .navto {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background-color: #FFFFFF;
+}
+.Topic .someList .navto div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #747774;
+  font-size: 1.6rem;
+  position: relative;
+}
+.Topic .someList .navto div span {
+  display: block;
+  border-top: 5px solid #ccc;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.Topic .someList .navto .active {
+  color: #ff8a00;
+}
+.Topic .someList .navto .active span {
+  display: block;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ff8a00;
+  border-left: 5px solid transparent;
+  top: 0.6rem;
+  right: 1rem;
+}
+.Topic .someList .area {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  font-size: 0.12rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.Topic .someList .area .title {
+  flex: 1;
+  background: #f0f0f0;
+  border-right: 1px solid #cccccc;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.Topic .someList .area .title h2 {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+}
+.Topic .someList .area .title .active {
+  color: #ff8a00;
+  background: #fff;
+  margin-right: -1px;
+  border-right: 2px solid #fff;
+}
+.Topic .someList .area .hideList {
+  flex: 3;
+}
+.Topic .someList .area .hideList ul li {
+  float: left;
+  width: 45%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+.Topic .someList .area .hideList ul li .active {
+  color: #ff8a00;
+}
+.Topic .someList .price {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  font-size: 1.2rem;
+  display: none;
+}
+.Topic .someList .price li {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #ccc;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.Topic .someList .price li:last-of-type {
+  border-bottom: none;
+}
+.Topic .someList .house {
+  background: #fff;
+  padding-bottom: 2rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  font-size: 1.2rem;
+  display: none;
+}
+.Topic .someList .house li {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #ccc;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.Topic .someList .house li span {
+  width: 1.4rem;
+  height: 1.5rem;
+  float: right;
+  margin-top: 1.2rem;
+  margin-right: 2rem;
+  border: 1px solid #c5c3c3;
+}
+.Topic .someList .house li .active {
+  border: 1px solid #ff8a00;
+  background: url("../../image/SecondHandList/ok.png") center center no-repeat;
+}
+.Topic .someList .house li .btnOK {
+  text-align: center;
+  background: #ff8a00;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+.Topic .someList .house li:last-of-type {
+  border-bottom: none;
+}
+.Topic .someList .more {
+  background: #fff;
+  width: 100%;
+  padding: 0 2rem 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  font-size: 1.2rem;
+  display: none;
+}
+.Topic .someList .more h3 {
+  padding: 2rem 0 1.2rem 0;
+  font-size: 1.4rem;
+}
+.Topic .someList .more .childList {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.Topic .someList .more .childList li {
+  float: left;
+  /*flex: 1;*/
+  width: 22%;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  border: 1px solid #cccccc;
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-bottom: 1.2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.Topic .someList .more .childList li:first-of-type,
+.Topic .someList .more .childList li:nth-of-type(5),
+.Topic .someList .more .childList li:nth-of-type(9) {
+  margin-left: 0;
+}
+/* 热门房源 */
+.hotHouse {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotHouse ul {
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+}
+.hotHouse ul li a {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid red;
+}
+.hotHouse ul li a .img {
+  width: 8.1rem;
+  height: 8.1rem;
+}
+.hotHouse ul li a .img img {
+  width: 100%;
+  height: 100%;
+}
+.hotHouse ul li a .text {
+  margin-left: 1rem;
+}
+.hotHouse ul li a .text h3 {
+  font-size: 1.4rem;
+  overflow: hidden;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.hotHouse ul li a .text p {
+  font-size: 1.2rem;
+  padding: 0.35rem 0;
+  box-sizing: border-box;
+  color: #000;
+  overflow: hidden;
+}
+.hotHouse ul li a .text p strong {
+  color: #ff8a00;
+  float: right;
+}
+.hotHouse ul li a .text p:nth-of-type(2) {
+  color: #8b8b8b;
+}
+.hotHouse ul li a .text p:nth-of-type(2) span {
+  color: #999999;
+  float: right;
+}
+.hotHouse ul li a .text p i {
+  font-style: normal;
+  float: left;
+  color: #6DA719;
+  background: #f4f7f9;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #6DA719;
+}
+.hotHouse ul li:last-of-type {
+  border-bottom: none;
+}
